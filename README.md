@@ -1,10 +1,6 @@
 # 4.Execution_of_NetworkCommands
 
-
-
-
 ### NAME: G.SINDHU PRIYA REDDY
-
 
 ### REG: 212224040319
 
@@ -35,77 +31,35 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 
-
-
-#### PROGRAM:
-
-
-### SERVER:
-
-
-```
-
-import socket 
-s=socket.socket() 
-s.connect(('localhost',8000)) 
-while True: 
-    ip=input("Enter the website you want to ping ") 
-    s.send(ip.encode()) 
-    print(s.recv(1024).decode())
-
-
-```
-
-### CLIENT:
-
-
-```
-
-
-import socket 
-from pythonping import ping 
-s=socket.socket() 
-s.bind(('localhost'8000)) 
-s.listen(5) 
-c,addr=s.accept() 
-while True: 
-    hostname=c.recv(1024).decode() 
-    try: 
-        c.send(str(ping(hostname, verbose=False)).encode()) 
-    except KeyError: 
-        c.send("Not Found".encode())
-
-
-```
-
-### TRACE ROUTE:
-
-```
-
-from scapy.all import* 
-target = ["www.google.com"] 
-result, unans = traceroute(target,maxttl=32) 
-print(result,unans)
-
-```
-
 ## Output
+## netsat:
+![image](https://github.com/user-attachments/assets/0d0f7f80-9b2f-4276-abed-3ab9b2df2578)
+## ipconfig:
+![image](https://github.com/user-attachments/assets/90718093-8b0c-44a1-8710-1281d4ca0796)
+## ping:
+![image](https://github.com/user-attachments/assets/28cdef1b-9104-42cc-8ee7-337515c09011)
+## tracet:
+![image](https://github.com/user-attachments/assets/eb919933-a045-4caa-94e4-1f03c844e022)
+## nslookup :
+![image](https://github.com/user-attachments/assets/d76d2787-6381-4abb-81b5-2c86b6e2f8c4)
+## getmac :
+![image](https://github.com/user-attachments/assets/ddc8f7e5-b592-4035-a8cd-be466dd8b14f)
+## hostname :
+![image](https://github.com/user-attachments/assets/b3c7ae07-ab20-4f1f-890a-b489f14d2a2b)
+## nbtstat :
+![image](https://github.com/user-attachments/assets/358251e1-41ad-41d9-b77a-d035b2f5c1f6)
+## arp :
+![image](https://github.com/user-attachments/assets/fc24073d-9f52-4aee-a9fc-72abe49702e7)
+## systeminfo :
+![image](https://github.com/user-attachments/assets/2d4c29af-69bb-4a04-bd70-352429674e93)
 
-### CLIENT:
-
-<img width="1012" height="452" alt="image" src="https://github.com/user-attachments/assets/9b1bb8f7-f3ab-4a31-ac56-bf35139c8b81" />
-
-
-### SERVER:
-
-<img width="1132" height="425" alt="image" src="https://github.com/user-attachments/assets/e1dbe55e-adc5-4dd3-90a4-5437611289ae" />
 
 
 
-### TRACEROUTE
 
 
-<img width="1141" height="717" alt="image" src="https://github.com/user-attachments/assets/04f7a0d9-b55a-4195-aaa1-203c5543a273" />
+
+
 
 
 ## Result
